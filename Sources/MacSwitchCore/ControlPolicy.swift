@@ -21,8 +21,13 @@ public enum SleepMode: Int, CaseIterable, Sendable {
     }
 
     public var authorizationScript: String {
+        authorizationScript(preferredLanguages: Locale.preferredLanguages)
+    }
+
+    public func authorizationScript(preferredLanguages: [String]) -> String {
         // The complete command is selected from this enum; no user input enters a shell.
-        "do shell script \"\(command)\" with administrator privileges with prompt \"MacSwitch에서 잠자기 설정을 변경합니다.\""
+        let prompt = PasswordMessages(preferredLanguages: preferredLanguages).prompt
+        return "do shell script \"\(command)\" with administrator privileges with prompt \"\(prompt)\""
     }
 }
 

@@ -4,7 +4,7 @@
 
 [English](README.md) · [DMG 다운로드](https://github.com/blackcat199099/macswitch/releases/latest/download/MacSwitch.dmg) · [ZIP 다운로드](https://github.com/blackcat199099/macswitch/releases/latest/download/MacSwitch.zip) · [최신 버전](https://github.com/blackcat199099/macswitch/releases/latest)
 
-macOS 14 이상 · Apple Silicon·Intel 유니버설 앱 · 현재 앱 화면은 한국어입니다.
+macOS 14 이상 · Apple Silicon·Intel 유니버설 앱 · 버튼은 한국어, 암호 안내는 한국어·영어를 지원합니다.
 
 <img src="docs/assets/screenshot-live.png" width="540" alt="실제로 실행 중인 MacSwitch의 네 가지 제어 아이콘">
 
@@ -16,7 +16,7 @@ macOS 14 이상 · Apple Silicon·Intel 유니버설 앱 · 현재 앱 화면은
 2. 설치한 앱을 실행하면 화면 오른쪽 위 메뉴 막대에 노트북 아이콘이 나타납니다. 클릭하면 버튼 네 개가 열립니다.
 3. 키보드를 잠그려면 앱의 **키보드 잠금 권한 설정**을 누른 뒤, **시스템 설정 → 개인정보 보호 및 보안 → 손쉬운 사용**에서 MacSwitch를 허용합니다. 앱으로 돌아와 ‘잠그기’를 누르세요.
 
-**처음 실행할 때:** 첫 공개판은 로컬 서명된 앱이며 Apple Developer ID 서명과 공증을 받지 않았습니다. macOS가 실행을 차단할 수 있습니다. 소스와 다운로드 체크섬을 확인한 뒤 실행 여부를 결정하세요. 앱별 ‘그래도 열기’ 절차는 [Apple 공식 안내](https://support.apple.com/102445)를 참고하세요. Gatekeeper나 시스템 무결성 보호 기능을 끌 필요는 없습니다.
+**처음 실행할 때:** 이 배포본은 로컬 서명된 앱이며 Apple Developer ID 서명과 공증을 받지 않았습니다. macOS가 실행을 차단할 수 있습니다. 소스와 다운로드 체크섬을 확인한 뒤 실행 여부를 결정하세요. 앱별 ‘그래도 열기’ 절차는 [Apple 공식 안내](https://support.apple.com/102445)를 참고하세요. Gatekeeper나 시스템 무결성 보호 기능을 끌 필요는 없습니다.
 
 ## 네 아이콘 사용법
 
@@ -33,7 +33,7 @@ macOS 14 이상 · Apple Silicon·Intel 유니버설 앱 · 현재 앱 화면은
 
 ## 알아두면 좋은 점
 
-- 잠자기 설정 변경 시 **macOS 관리자 인증**이 필요할 수 있습니다. 앱이 암호를 직접 입력받거나 저장하지 않습니다. 관리자 권한으로 실행되는 명령은 위의 고정된 `pmset` 명령 두 개뿐입니다.
+- 잠자기 설정을 바꿀 때 암호 창이 뜨면 **“Mac 로그인 암호를 입력해 주세요.”** 안내에 따라 입력하세요. Mac의 첫 번째 선호 언어가 한국어이면 한국어로, 그 외에는 “Enter your Mac login password.”로 표시합니다. 시스템 버튼과 입력칸 이름은 macOS의 언어를 따릅니다. 관리자 계정이 필요할 수 있습니다. 앱이 암호를 직접 입력받거나 저장하지 않습니다. 관리자 권한으로 실행되는 명령은 위의 고정된 `pmset` 명령 두 개뿐입니다.
 - 선택한 잠자기 설정은 **앱을 종료하거나 Mac을 재시작해도 유지**됩니다. 다시 잠자기를 허용하려면 달 아이콘을 누르세요.
 - 키보드 차단은 앱 종료, Mac 잠자기, 사용자 전환 또는 차단을 유지할 수 없는 상황에서 해제됩니다.
 - 전원 버튼·Touch ID·로그인 화면·macOS가 보호하는 암호 입력은 차단 범위 밖입니다. 보호된 입력이 켜져 있으면 잠금을 시작하지 않으며, 잠금 중 켜지면 차단을 해제합니다.

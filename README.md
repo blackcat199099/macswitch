@@ -8,7 +8,7 @@ macOS 14+ · Universal binary for Apple Silicon and Intel · MIT-licensed code
 
 <img src="docs/assets/screenshot-live.png" width="540" alt="Real MacSwitch window with four controls: allow sleep, stay awake, lock keyboard, unlock keyboard">
 
-*Actual app capture. The current app interface is Korean; the English guide maps the same four icons.*
+*Actual app capture. The controls use Korean labels; password guidance supports Korean and English. The English guide maps the same four icons.*
 
 ## Download and install
 
@@ -33,7 +33,7 @@ Blue icons and small dots show the active state. The two sleep controls form one
 
 ## Permissions and behavior
 
-- **Administrator authentication:** macOS may request it when changing sleep settings. The only privileged commands are the two fixed `pmset` commands above. MacSwitch does not collect or store your password.
+- **Mac login password:** the app now says “Enter your Mac login password.” in English or “Mac 로그인 암호를 입력해 주세요.” in Korean, based on your Mac’s preferred language. macOS owns the dialog buttons and field labels, which follow the system language. An administrator account may be required to change sleep settings. The only privileged commands are the two fixed `pmset` commands above. MacSwitch does not collect or store your password.
 - **Accessibility:** needed to filter keyboard events in the current user session. See [Apple's permission guide](https://support.apple.com/guide/mac-help/mh43185/mac).
 - **Persistent sleep setting:** your chosen `pmset` setting remains after quitting or restarting. Click the moon to restore normal sleep.
 - **Automatic keyboard release:** the filter is removed when the app quits, the Mac goes to sleep, the user session becomes inactive, or macOS prevents the filter from operating.

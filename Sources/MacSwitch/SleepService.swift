@@ -47,8 +47,8 @@ enum SleepService {
         var errorDescription: String? {
             switch self {
             case .unreadable: return "잠자기 상태를 읽지 못했습니다. 다시 확인해 주세요."
-            case .cancelled: return "인증을 취소했습니다. 잠자기 설정은 바뀌지 않았습니다."
-            case .changeFailed: return "잠자기 설정을 변경하지 못했습니다. 관리자 계정으로 인증해 주세요."
+            case .cancelled: return PasswordMessages().cancelled
+            case .changeFailed: return PasswordMessages().failed
             case .notApplied: return "요청한 설정이 확인되지 않았습니다. 다시 시도해 주세요."
             }
         }

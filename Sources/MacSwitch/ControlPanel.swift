@@ -40,7 +40,7 @@ struct ControlPanel: View {
                         .fill(model.isKeyboardLocked ? Color.orange : Color.accentColor)
                         .frame(width: 5, height: 5)
                     if model.isChangingSleep {
-                        Text("관리자 인증을 기다리는 중…")
+                        Text(PasswordMessages().prompt)
                     } else {
                         Text(model.summary)
                     }

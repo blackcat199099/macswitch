@@ -10,11 +10,11 @@ MacSwitch — Quick start
 
 Emergency unlock: press Esc three times within 1.5 seconds.
 The mouse and trackpad remain available while the keyboard is locked.
-macOS may request administrator authentication to change sleep settings.
+If a password dialog appears, enter your Mac login password. Guidance supports Korean and English.
 'Allow sleep' restores normal sleep behavior. It does not sleep immediately.
 Sleep settings remain in effect after quitting the app.
 
-This first release is ad-hoc signed, without Apple Developer ID signing or notarization.
+This build is ad-hoc signed, without Apple Developer ID signing or notarization.
 If macOS blocks the app, read the README and Apple's official guidance:
 https://support.apple.com/102445
 

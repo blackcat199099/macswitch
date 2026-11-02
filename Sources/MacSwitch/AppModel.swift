@@ -60,7 +60,7 @@ final class AppModel {
         // The administrator dialog needs keyboard input. Unlock before it appears.
         let didUnlock = isKeyboardLocked
         unlockKeyboard()
-        showNotice(didUnlock ? "관리자 인증을 위해 키보드를 해제했습니다." : nil, isError: false)
+        showNotice(didUnlock ? PasswordMessages().keyboardUnlocked : nil, isError: false)
         isChangingSleep = true
         NSApp.activate(ignoringOtherApps: true)
         Task {

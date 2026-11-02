@@ -38,3 +38,7 @@ python3 Scripts/audit-public.py --archive artifacts.nosync/MacSwitch.zip
 For a private review, add `--forbid` arguments for local identifiers and `--binary` for the extracted app executable. Matched values are never printed by the audit script. Do not commit a private identifier list or local scan logs.
 
 The review covers material being published. It does not assess unrelated files elsewhere on the developer's computer. Intel hardware execution, physical-keyboard emergency recovery, and Apple notarization limits are documented in `VERIFICATION.md`.
+
+## v1.0.1 follow-up
+
+The short Korean and English password messages were reviewed together with the updated executable and installer. Publication checks were repeated for the new tracked files, ZIP contents, and release executable. The password tests compile the authorization scripts without executing them or entering credentials. Password handling still belongs to the existing macOS authorization dialog.

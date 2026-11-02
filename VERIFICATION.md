@@ -1,13 +1,14 @@
 # Verification
 
-Release candidate: v1.0.0. Checked on 2026-11-02.
+Release: v1.0.1. Checked on 2026-11-02.
 
 ## Automated checks
 
 - Release compilation for arm64 and x86_64.
 - Separate `xcrun lipo -verify_arch` checks for both CPU slices. This replaces the combined architecture check that prevented packaging on the development Mac.
 - Minimum macOS version checked from executable load commands and application metadata.
-- 10 Swift Testing tests covering real `pmset` output parsing, unknown values, fixed command selection, keyboard filtering, mouse-event allowance, recovery modifiers, and the triple-Esc recovery sequence.
+- 14 Swift Testing tests covering real `pmset` output parsing, unknown values, fixed command selection, keyboard filtering, mouse-event allowance, recovery modifiers, and the triple-Esc recovery sequence.
+- Password tests cover Korean language variants, English fallback, unchanged privileged commands, and compilation of both sleep commands in both languages without executing them.
 - Recovery tests reject held-key repeats, slow sequences, and sequences interrupted by another key.
 - Shell syntax, app property-list validation, ad-hoc code-signature verification, ZIP integrity, and DMG verification.
 
@@ -21,6 +22,8 @@ Release candidate: v1.0.0. Checked on 2026-11-02.
 - Korean and English quick-start posters were generated with ImageGen and visually inspected. They are labeled separately from real captures.
 
 ## Limits
+
+- Password copy is verified by language-selection tests and AppleScript compilation. macOS-owned dialog buttons and field labels follow the system language. No credentials are entered during tests.
 
 - The Intel slice is compiled and structurally verified; execution on a physical Intel Mac has not been tested.
 - Triple-Esc recovery is covered by automated policy tests. A physical-keyboard end-to-end recovery check has not been completed; synthetic UI input did not establish this result. Mouse release remains available.
