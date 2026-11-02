@@ -1,0 +1,54 @@
+{
+  "source": "https://github.com/dqev/reicon/blob/main/data/icon-data.json",
+  "generatedAt": "2026-07-16T09:02:21.298Z",
+  "icons": [
+    {
+      "name": "moon",
+      "category": "weather",
+      "weights": [
+        "Outline",
+        "Filled"
+      ]
+    },
+    {
+      "name": "sun",
+      "category": "weather",
+      "weights": [
+        "Outline",
+        "Filled"
+      ]
+    },
+    {
+      "name": "lock",
+      "category": "security",
+      "weights": [
+        "Outline",
+        "Filled"
+      ]
+    },
+    {
+      "name": "lock-open",
+      "category": "security",
+      "weights": [
+        "Outline",
+        "Filled"
+      ]
+    },
+    {
+      "name": "laptop",
+      "category": "devices",
+      "weights": [
+        "Outline",
+        "Filled"
+      ]
+    },
+    {
+      "name": "power",
+      "category": "ui",
+      "weights": [
+        "Outline",
+        "Filled"
+      ]
+    }
+  ]
+}

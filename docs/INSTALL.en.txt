@@ -1,0 +1,25 @@
+MacSwitch — Quick start
+
+1. Drag MacSwitch.app into Applications.
+2. Open the installed app and click its laptop icon in the top-right menu bar.
+3. Moon = allow sleep / Sun = stay awake
+   Closed lock = lock keyboard / Open lock = unlock keyboard
+4. For keyboard locking, click the permission link in the app.
+   Enable MacSwitch in System Settings > Privacy & Security > Accessibility.
+5. Blue icons and small dots show the active state. Hover for a description.
+
+Emergency unlock: press Esc three times within 1.5 seconds.
+The mouse and trackpad remain available while the keyboard is locked.
+macOS may request administrator authentication to change sleep settings.
+'Allow sleep' restores normal sleep behavior. It does not sleep immediately.
+Sleep settings remain in effect after quitting the app.
+
+This first release is ad-hoc signed, without Apple Developer ID signing or notarization.
+If macOS blocks the app, read the README and Apple's official guidance:
+https://support.apple.com/102445
+
+macOS 14+ / Universal app for Apple Silicon and Intel
+The current app interface is Korean; the four icons match the descriptions above.
+Code: MIT License. Third-party icon notices are included inside the app.
+Source, updates, and full instructions:
+https://github.com/blackcat199099/macswitch
