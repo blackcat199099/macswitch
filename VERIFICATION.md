@@ -23,7 +23,7 @@ Release: v1.0.1. Checked on 2026-11-02.
 
 ## Limits
 
-- Password copy is verified by language-selection tests and AppleScript compilation. macOS-owned dialog buttons and field labels follow the system language. No credentials are entered during tests.
+- Language selection and script syntax are tested. These checks do not verify the text shown by macOS security UI. A subsequent macOS 27 report confirmed that the system can replace the requested short prompt with its own long script-security warning. The app cannot customize that warning. No credentials are entered during tests.
 
 - The Intel slice is compiled and structurally verified; execution on a physical Intel Mac has not been tested.
 - Triple-Esc recovery is covered by automated policy tests. A physical-keyboard end-to-end recovery check has not been completed; synthetic UI input did not establish this result. Mouse release remains available.
